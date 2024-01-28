@@ -1,0 +1,5 @@
+<?php 
+    get_header();
+?>
+
+<h1 id="egg">hi</h1>
