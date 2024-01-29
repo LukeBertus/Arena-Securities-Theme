@@ -1,2 +1,26 @@
 .footer-container
     background-color: $darkGrey
+    height: 12rem
+    display: flex
+    justify-content: center
+    .footer
+        max-width: 1200px 
+        height: 100%
+        padding: 0 1rem
+        &__upper
+            height: 40%
+            padding: 1.5rem 0
+            .fineprint
+                font: 300 0.85rem 'montserrat', sans-serif
+                line-height: 1.15rem
+        &__lower
+            height: 60%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            img
+                height: 4rem
+            p
+                margin: 0
+                color: $textGrey
+                font: 300 1rem 'montserrat', sans-serif
