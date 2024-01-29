@@ -1,26 +1,42 @@
 .footer-container
     background-color: $darkGrey
-    height: 12rem
     display: flex
     justify-content: center
     .footer
+        // Make footer responsive
+        @media (min-width: 1200px)
+            .footer__lower--desktop
+                display: flex
+            .footer__lower--mobile
+                display: none
+        @media (max-width: 1199px)
+            .footer__lower--desktop
+                display: none
+            .footer__lower--mobile
+                display: flex
         max-width: 1200px 
         height: 100%
         padding: 0 1rem
         &__upper
             height: 40%
-            padding: 1.5rem 0
+            margin: 1.5rem 0
             .fineprint
                 font: 300 0.85rem 'montserrat', sans-serif
                 line-height: 1.15rem
         &__lower
             height: 60%
-            display: flex
-            justify-content: space-between
-            align-items: center
-            img
-                height: 4rem
-            p
-                margin: 0
-                color: $textGrey
-                font: 300 1rem 'montserrat', sans-serif
+            margin: 1rem 0   
+            align-items: center    
+            &--desktop
+                justify-content: space-between
+                img
+                    height: 3.5rem
+                p
+                    color: $textGrey
+                    font: 300 1rem 'montserrat', sans-serif
+            &--mobile
+                justify-content: center
+                p
+                    
+                    color: $textGrey
+                    font: 300 1rem 'montserrat', sans-serif    
