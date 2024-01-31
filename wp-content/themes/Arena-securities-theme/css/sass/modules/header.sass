@@ -2,10 +2,13 @@
     justify-content: space-between 
     max-width: 1200px 
     margin: 0 auto
-    padding: 0 16px 
+    padding: 0
     height: 4rem
     .navbar-brand
         margin-right: auto
+        padding-left: 1rem
+    .navbar-toggler
+        margin-right: 1rem
     .navbar-collapse
         justify-content: flex-end
         .navbar-nav
@@ -18,3 +21,7 @@
                     color: $limeGreen
                 &:focus
                     color: $linkGreen
+    // Give overlay opaque background
+    #navbarNavAltMarkup
+        .navbar-nav
+            background-color: white    
