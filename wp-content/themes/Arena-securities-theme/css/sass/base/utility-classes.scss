@@ -1,3 +1,13 @@
+.section {
+    &__outer {
+        width: 100vw;
+    }
+    &__inner {
+        max-width: 1100px;
+        height: 100%;
+    }
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
