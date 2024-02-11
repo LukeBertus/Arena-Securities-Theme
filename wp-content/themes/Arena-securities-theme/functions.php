@@ -1,6 +1,6 @@
 <?php 
 
-function themeFiles() {
+function theme_files() {
     wp_deregister_script('jquery');
     // jQuery
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.4.1.min.js', array(), null, true);
@@ -27,6 +27,10 @@ function themeFiles() {
     wp_enqueue_style('arena_main_styles', get_theme_file_uri('/build/style-index.css'));
     wp_enqueue_style('arena_extra_styles', get_theme_file_uri('/css/dist/styles.css'));
 }
-add_action('wp_enqueue_scripts', 'themeFiles');
+add_action('wp_enqueue_scripts', 'theme_files');
 
 
+function theme_features() {
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'theme_features');
