@@ -7,7 +7,9 @@
         <div class="title_container">
             <h1 class="page_title">ARENA SECURITIES</h1>
             <hr>
-            <p class="page_subtitle">A Private Investment Company</p>
+            <div class="subtitle_container" style="height: 100px;">
+                <p class="page_subtitle hidden">A Private Investment Company</p>
+            </div>
         </div>
     </div>
 </div>
