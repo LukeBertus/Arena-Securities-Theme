@@ -6,11 +6,12 @@
         padding-top: 50px
         padding-bottom: 50px
         .info
-            width: 50%
+            flex: 1 1 0
             &__left
                 display: flex
                 flex-direction: column
                 justify-content: center
+                width: 100%
                 .info-title
                     display: flex
                     justify-content: left
@@ -41,11 +42,10 @@
                     width: 10rem
                     font-weight: bold
             &__right
+                width: 50%
                 display: flex
                 justify-content: center
                 align-items: center
                 img
                     width: 100%
                     max-width: 400px
-                    @media (max-width: 768px)
-                        display: none
