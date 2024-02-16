@@ -34,7 +34,17 @@
 
 <div class="principle section__outer">
     <div class="section__inner">
-        
+        <?php $homepageEvents = new WP_Query([
+              'posts_per_page' => 4,
+              'post_type' => 'principles',
+            ]);
+
+            while ($homepageEvents->have_posts()) { 
+                $homepageEvents->the_post(); ?>
+                <img src="<?=the_post_thumbnail_url('medium')?>">
+                <?php
+             } wp_reset_postdata();
+          ?>
     </div>
 </div>
 <?php 

@@ -3,7 +3,7 @@ function post_types () {
     register_post_type('principles', [
         'capability_type' => 'post',
         'map_meta_cap' => true,
-        'supports' => ['title', 'editor', 'custom-fields'],
+        'supports' => ['title', 'editor', 'thumbnail'],
         'public' => true,
         'show_in_rest' => true,
         'labels' => [
