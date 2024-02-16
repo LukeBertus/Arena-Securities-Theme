@@ -32,6 +32,11 @@
     </div>
 </div>
 
+<div class="principle section__outer">
+    <div class="section__inner">
+        
+    </div>
+</div>
 <?php 
     get_footer();
 ?>
