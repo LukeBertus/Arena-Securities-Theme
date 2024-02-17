@@ -37,7 +37,7 @@
         <h1 class="principle__title">FUND VALUES</h1>
         <?php $homepageEvents = new WP_Query([
               'posts_per_page' => 4,
-              'post_type' => 'principles',
+              'post_type' => 'values',
             ]);
 
             while ($homepageEvents->have_posts()) { 
