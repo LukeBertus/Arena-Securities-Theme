@@ -41,7 +41,18 @@
 
             while ($homepageEvents->have_posts()) { 
                 $homepageEvents->the_post(); ?>
-                <img src="<?=the_post_thumbnail_url('medium')?>">
+                    <div class="principle__card">
+                        <div class="icon">
+                            <img src="<?=the_post_thumbnail_url('medium')?>">
+                        </div>
+                        <div class="text">
+                            <h1><?=the_title()?></h1>
+                            <hr>
+                            <p><?=the_content()?></p>
+                        </div>
+                    </div>
+                    
+
                 <?php
              } wp_reset_postdata();
           ?>
