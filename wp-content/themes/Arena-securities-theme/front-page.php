@@ -34,6 +34,7 @@
 
 <div class="principle section__outer">
     <div class="section__inner">
+        <h1 class="principle__title">FUND VALUES</h1>
         <?php $homepageEvents = new WP_Query([
               'posts_per_page' => 4,
               'post_type' => 'principles',

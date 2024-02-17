@@ -1,2 +1,37 @@
 .principle
-    height: 700px
+    background-color: $darkGreen
+    padding: 30px 0
+    .section__inner
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: start
+        gap: 1.4rem
+        .principle__title
+            font-family: 'open sans', serif
+            font-weight: 600
+            font-size: 4.5rem
+            color: white
+            margin-bottom: 50px
+            align-self: center
+        .principle__card
+            display: flex
+            align-items: center
+            gap: 2rem
+            img
+                width: 113px
+                height: 113px
+            .text
+                width: calc(100% - 113px - 2rem)
+                h1
+                    font: 600 2.2rem 'Open Sans', sans-serif
+                    color: $lightGreen
+                p
+                    font: 400 1.1rem 'Poppins', sans-serif
+                    color: white
+                    padding-bottom: 5px
+                hr
+                    border: none
+                    border-top: 1px solid white
+                    margin: 0.5rem 0 0.3rem
+                    width: 70%
