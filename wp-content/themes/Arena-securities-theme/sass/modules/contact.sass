@@ -1,0 +1,47 @@
+.contact
+    height: 30rem
+    &__inner
+        display: flex
+        flex-direction: column
+    &__title
+        display: flex
+        align-items: center
+        gap: 1.5rem
+        margin-top: 2rem
+        svg
+            fill: $limeGreen
+        h1
+            font: 500 2.5rem 'Poppins', serif
+            color: $mainGreen
+            letter-spacing: -2px
+    &__body
+        align-self: center
+        width: 75%
+        margin-top: 2rem
+        h1
+            font: 700 2.5rem sans-serif
+        hr
+            margin: 0.2rem 0
+            border: none
+            border-top: 1px solid $limeGreen
+        p
+            color: $limeGreen
+            font: italic 100 1.2rem sans-serif
+            margin-top: 0.4rem
+        .contact__methods
+            display: flex
+            flex-direction: column
+            gap: 1.5rem
+            margin-top: 2rem
+            .contact__method
+                display: flex
+                align-items: center
+                gap: 1rem
+                a
+                    font: 400 1.3rem 'Poppins', sans-serif
+                    position: relative
+                    bottom: 2px
+                    &:hover
+                        color: $linkGreen
+
+            
