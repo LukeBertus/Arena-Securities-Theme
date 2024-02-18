@@ -15,7 +15,7 @@
 </div>
 <div class="company-info section__outer">
     <div class="section__inner">
-        <div class="info__left">
+        <div class="info__left" data-aos="fade-in">
             <div class="info-title">
                 <svg width="3" height="40">
                     <rect width="3" height="40" rx="2" ry="2" stroke-width="1"/>
@@ -38,7 +38,7 @@
 </div>
 
 <div class="values section__outer">
-    <div class="section__inner">
+    <div class="section__inner" data-aos="fade-in">
         <h1 class="values__title">FUND VALUES</h1>
         <?php $homepageValues = new WP_Query([
               'posts_per_page' => 4,
@@ -61,7 +61,7 @@
 </div>
 
 <div class="contact section__outer">
-    <div class="contact__inner section__inner">
+    <div class="contact__inner section__inner" data-aos="fade-in">
         <div class="contact__title">
             <svg width="3" height="40">
                 <rect width="3" height="40" rx="2" ry="2" stroke-width="1"/>
