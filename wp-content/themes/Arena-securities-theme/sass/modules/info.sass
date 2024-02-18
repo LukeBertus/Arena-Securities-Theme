@@ -3,15 +3,35 @@
     background-color: $lightGrey
     .section__inner
         display: flex
-        padding-top: 50px
-        padding-bottom: 50px
+        padding-top: 70px
+        padding-bottom: 60px
         .info
             flex: 1 1 0
+            &__right
+                width: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                    width: 100%
+                    max-width: 400px
             &__left
                 display: flex
                 flex-direction: column
                 justify-content: center
                 width: 100%
+                p
+                    font-family: 'Open Sans', sans-serif
+                    max-width: 520px
+                button
+                    margin-top: 1rem
+                    padding: 0.8rem 0 0.7rem
+                    border: none
+                    border-radius: 5px
+                    background-color: $mainGreen
+                    color: white
+                    width: 10rem
+                    font-weight: bold
                 .info-title
                     display: flex
                     justify-content: left
@@ -29,23 +49,5 @@
                         color: $mainGreen
                         margin-bottom: 1rem
                         letter-spacing: -2px
-                p
-                    font-family: 'Open Sans', sans-serif
-                    max-width: 520px
-                button
-                    margin-top: 1rem
-                    padding: 0.8rem 0 0.7rem
-                    border: none
-                    border-radius: 5px
-                    background-color: $mainGreen
-                    color: white
-                    width: 10rem
-                    font-weight: bold
-            &__right
-                width: 50%
-                display: flex
-                justify-content: center
-                align-items: center
-                img
-                    width: 100%
-                    max-width: 400px
+                
+            

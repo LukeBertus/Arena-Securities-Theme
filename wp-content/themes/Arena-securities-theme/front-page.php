@@ -13,7 +13,6 @@
         </div>
     </div>
 </div>
-
 <div class="company-info section__outer">
     <div class="section__inner">
         <div class="info info__left">
@@ -32,12 +31,19 @@
     </div>
 </div>
 
+<div class="transition__upper">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 24">
+        <path fill-opacity="1" d="M0,12 C96,24 192,0 288,12 C384,24 480,0 576,12 L576,24 L0,24 Z"></path>
+    </svg>
+</div>
+
 <div class="principle section__outer">
     <div class="section__inner">
         <h1 class="principle__title">FUND VALUES</h1>
         <?php $homepageEvents = new WP_Query([
               'posts_per_page' => 4,
               'post_type' => 'values',
+              'order' => 'ASC'
             ]);
 
             while ($homepageEvents->have_posts()) { 
@@ -59,6 +65,13 @@
           ?>
     </div>
 </div>
+
+<div class="transition__lower">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 24">
+        <path fill-opacity="1" d="M0,12 C96,24 192,0 288,12 C384,24 480,0 576,12 L576,24 L0,24 Z"></path>
+    </svg>
+</div>
+
 <?php 
     get_footer();
 ?>
