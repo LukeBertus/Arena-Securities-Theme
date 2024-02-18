@@ -1,5 +1,6 @@
 .transition
     &__upper, &__lower
+        min-width: 320px
         svg
             position: relative
             fill: $darkGreen
@@ -11,4 +12,6 @@
         svg
             bottom: 1px
             transform: rotate(180deg)
+            @media(max-width: 576px)
+                bottom: 3px
 

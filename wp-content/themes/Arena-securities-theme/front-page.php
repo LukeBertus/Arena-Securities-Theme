@@ -61,19 +61,19 @@
 </div>
 
 <div class="contact section__outer">
-    <div class="section__inner">
-        <div class="contact-title">
+    <div class="contact__inner section__inner">
+        <div class="contact__title">
             <svg width="3" height="40">
                 <rect width="3" height="40" rx="2" ry="2" stroke-width="1"/>
             </svg>
             <h1>CONTACT US</h1>
         </div>
-        <div class="contact-body">
+        <div class="contact__body">
             <h1>Aleck Arena</h1>
             <hr>
             <p>CIO</p>
 
-            <div class="contact-method">
+            <div class="contact__methods">
                 <?php $homepageContacts = new WP_Query([
                     'posts_per_page' => 4,
                     'post_type' => 'contact_methods',
@@ -86,15 +86,16 @@
                         $title = get_the_title();
                         $linkto = get_field('link_to');
                     ?>
-                    <div class="icon">
-                        <img src="<?=the_post_thumbnail_url('medium')?>">
-                    </div>
-                    <div class="text">
-                        <a href="<?=link_contact($type, $title, $linkto)?>"><?=the_title()?></a>
+                    <div class="contact__method">
+                        <div class="icon">
+                            <img src="<?=the_post_thumbnail_url('medium')?>">
+                        </div>
+                        <div class="text">
+                            <a href="<?=link_contact($type, $title, $linkto)?>"><?=the_title()?></a>
+                        </div>
                     </div>
                 <?php } wp_reset_postdata();
                 ?>
-                
             </div>
         </div>
     </div>

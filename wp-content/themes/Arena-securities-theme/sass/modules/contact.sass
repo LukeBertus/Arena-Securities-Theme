@@ -1,5 +1,7 @@
 .contact
     height: 30rem
+    @media(max-width: 576px)
+        height: 28rem
     &__inner
         display: flex
         flex-direction: column
@@ -14,12 +16,17 @@
             font: 500 2.5rem 'Poppins', serif
             color: $mainGreen
             letter-spacing: -2px
+            white-space: nowrap
     &__body
         align-self: center
         width: 75%
         margin-top: 2rem
+        @media (max-width: 576px)
+            width: 100%
         h1
             font: 700 2.5rem sans-serif
+            @media (max-width: 576px)
+                font-size: 2rem
         hr
             margin: 0.2rem 0
             border: none
@@ -41,6 +48,8 @@
                     font: 400 1.3rem 'Poppins', sans-serif
                     position: relative
                     bottom: 2px
+                    @media (max-width: 576px)
+                        font-size: 1.05rem
                     &:hover
                         color: $linkGreen
 

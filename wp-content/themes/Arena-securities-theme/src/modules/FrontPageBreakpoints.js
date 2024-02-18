@@ -3,6 +3,7 @@ import $ from 'jquery';
 class FrontPageBreakpoints {
     constructor() {
         this.Events();
+        this.ourClickDispatcher();
     }
 
     Events() {
