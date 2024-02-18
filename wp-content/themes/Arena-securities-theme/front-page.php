@@ -47,20 +47,8 @@
             ]);
 
             while ($homepageEvents->have_posts()) { 
-                $homepageEvents->the_post(); ?>
-                    <div class="values__card">
-                        <div class="icon">
-                            <img src="<?=the_post_thumbnail_url('medium')?>">
-                        </div>
-                        <div class="text">
-                            <h1><?=the_title()?></h1>
-                            <hr>
-                            <p><?=the_content()?></p>
-                        </div>
-                    </div>
-                    
-
-                <?php
+                $homepageEvents->the_post(); 
+                get_template_part('template-parts/value');
              } wp_reset_postdata();
           ?>
     </div>
