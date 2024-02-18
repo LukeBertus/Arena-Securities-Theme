@@ -81,12 +81,16 @@
                 ]);
 
                 while ($homepageContacts->have_posts()) { 
-                    $homepageContacts->the_post(); ?>
+                    $homepageContacts->the_post();
+                        $type = get_field('type');
+                        $title = get_the_title();
+                        $linkto = get_field('link_to');
+                    ?>
                     <div class="icon">
                         <img src="<?=the_post_thumbnail_url('medium')?>">
                     </div>
                     <div class="text">
-                        <a href="<?=get_field('link_to')?>"><?=the_title()?></a>
+                        <a href="<?=link_contact($type, $title, $linkto)?>"><?=the_title()?></a>
                     </div>
                 <?php } wp_reset_postdata();
                 ?>
