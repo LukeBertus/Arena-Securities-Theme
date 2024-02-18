@@ -37,9 +37,9 @@
     </svg>
 </div>
 
-<div class="principle section__outer">
+<div class="values section__outer">
     <div class="section__inner">
-        <h1 class="principle__title">FUND VALUES</h1>
+        <h1 class="values__title">FUND VALUES</h1>
         <?php $homepageEvents = new WP_Query([
               'posts_per_page' => 4,
               'post_type' => 'values',
@@ -48,7 +48,7 @@
 
             while ($homepageEvents->have_posts()) { 
                 $homepageEvents->the_post(); ?>
-                    <div class="principle__card">
+                    <div class="values__card">
                         <div class="icon">
                             <img src="<?=the_post_thumbnail_url('medium')?>">
                         </div>
