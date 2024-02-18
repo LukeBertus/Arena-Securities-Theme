@@ -22,6 +22,15 @@ function theme_files() {
     wp_style_add_data('bootstrap', 'integrity', 'sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh');
     wp_style_add_data('bootstrap', 'crossorigin', 'anonymous');
 
+    // Register AOS styles
+    wp_register_style('aos-style', "https://unpkg.com/aos@2.3.1/dist/aos.css", array(), '2.3.1');
+    // Register AOS script
+    wp_register_script('aos-script', "https://unpkg.com/aos@2.3.1/dist/aos.js", array(), '2.3.1', true);
+    // Enqueue AOS styles and script
+    wp_enqueue_style('aos-style');
+    wp_enqueue_script('aos-script');
+    // Initialize AOS
+    wp_add_inline_script('aos-script', 'AOS.init();');
     
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap', array(), null);
     wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
