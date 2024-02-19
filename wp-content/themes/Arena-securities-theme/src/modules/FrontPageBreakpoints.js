@@ -11,6 +11,7 @@ class FrontPageBreakpoints {
     }
     // Methods will go here
     ourClickDispatcher(e) {
+        console.log(window.innerWidth);
         if (window.innerWidth < 768) {
             $('.info__right').hide();
         } else {

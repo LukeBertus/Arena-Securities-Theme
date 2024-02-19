@@ -7,7 +7,7 @@ class FrontPageTransitions {
 
     Events() {
         document.addEventListener("DOMContentLoaded", this.ourClickDispatcher.bind(this))
-        AudioScheduledSourceNode.init();
+        AOS.init();
     }
     // Methods will go here
     ourClickDispatcher(e) {
