@@ -55,3 +55,18 @@ function link_contact($type, $title, $linkto) {
         return "tel:" . $title;
     }
 }
+
+// Change default 'Media' to 'Library' to allow custom 'Media' post type
+function rename_media_menu($menu) {
+    global $menu;
+
+    // Iterate over each item in the admin menu
+    foreach($menu as $key => $value) {
+        // upload.php only in array if default, prevents custom post type from being renamed
+        if('Media' == $value[0] && 'upload.php' == $value[2]) {
+            $menu[$key][0] = 'Library';
+            $menu[$key][6] = 'dashicons-images-alt2';
+        }
+    }
+}
+add_action('admin_menu', 'rename_media_menu');
