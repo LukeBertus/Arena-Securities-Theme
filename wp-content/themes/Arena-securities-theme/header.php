@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link <?php if (is_front_page()) echo "nav-active"?>" href="<?=esc_url(home_url())?>">HOME</a>
-                    <a class="nav-item nav-link" href="#">MEDIA</a>
+                    <a class="nav-item nav-link <?php if (get_post_type() == 'media') echo "nav-active"?>" href="<?=get_post_type_archive_link('media')?>">MEDIA</a>
                     <a class="nav-item nav-link" href="#">BLOG</a>
                     <a class="nav-item nav-link" href="#">UPDATES</a>
                     <a class="nav-item nav-link" href="#">ABOUT</a>
