@@ -7,6 +7,7 @@ function post_types () {
         'supports' => ['title', 'editor', 'custom-fields'],
         'public' => true,
         'show_in_rest' => true,
+        'has_archive' => true,
         'labels' => [
             'name' => 'Media',
             'add_new_item' => 'Add New Media',
@@ -22,6 +23,7 @@ function post_types () {
         'supports' => ['title', 'editor', 'custom-fields'],
         'public' => true,
         'show_in_rest' => true,
+        'has_archive' => true,
         'labels' => [
             'name' => 'Blog',
             'add_new_item' => 'Add New Blog',
@@ -37,6 +39,7 @@ function post_types () {
         'supports' => ['title', 'editor', 'custom-fields'],
         'public' => true,
         'show_in_rest' => true,
+        'has_archive' => true,
         'labels' => [
             'name' => 'Updates',
             'add_new_item' => 'Add New Update',
