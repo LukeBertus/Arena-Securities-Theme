@@ -10,20 +10,20 @@
         get_header();
     ?>
     <span class="archive">
-        <div class="media-hero section__outer">
+        <div class="archive-hero media-hero hero-background section__outer" style="background-image: url('<?=get_theme_file_uri('images/blog-hero.jpg')?>');">
             <div class="seciton__inner">
                 <h1>Blog</h1>
             </div>
         </div>
-        <div class="media-body section__outer">
+        <div class="archive-body media-body section__outer">
             <div class="section__inner">
-                <?php
+            <?php
                 if (have_posts()) {
                     while(have_posts()) {
-                        the_post(); ?>
-                        <div><?=get_the_title()?></div>
-                    <?php }
-                } else echo "<h1 class='error'>No Blogs Found</h1>"
+                        the_post();
+                        get_template_part('template-parts/archive', 'blog');
+                    }
+                } else echo "<h1 class='error'>No Media Available</h1>"
                 ?>
             </div>
         </div>
