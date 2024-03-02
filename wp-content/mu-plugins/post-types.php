@@ -1,7 +1,7 @@
 <?php 
 function post_types () {
     // Media
-    register_post_type('media', [
+    register_post_type('files', [
         'capability_type' => 'post',
         'map_meta_cap' => true,
         'supports' => ['title', 'editor', 'custom-fields'],

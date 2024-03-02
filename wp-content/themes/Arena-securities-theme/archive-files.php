@@ -47,11 +47,17 @@
                 </div>
                 
             <?php
+                $ValuePosts = new WP_Query([
+                    'posts_per_page' => 4,
+                    'post_type' => 'values',
+                    'order' => 'ASC'
+                ]);
+
                 if (have_posts()) {
                     while(have_posts()) {
-                        the_post(); ?>
-                        <div><?=get_the_title()?></div>
-                    <?php }
+                        the_post();
+                        get_template_part('template-parts/archive', 'content');
+                    }
                 } else echo "<h1 class='error'>No Media Available</h1>"
                 ?>
             </div>
