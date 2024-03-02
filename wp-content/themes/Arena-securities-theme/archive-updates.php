@@ -8,7 +8,7 @@
 <body>
     <?php
         get_header();
-    ?>
+    ?>-
     <span class="archive">
         <div class="media-hero section__outer">
             <div class="seciton__inner">
@@ -17,7 +17,14 @@
         </div>
         <div class="media-body section__outer">
             <div class="section__inner">
-            
+                <?php
+                if (have_posts()) {
+                    while(have_posts()) {
+                        the_post(); ?>
+                        <div><?=get_the_title()?></div>
+                    <?php }
+                } else echo "<h1 class='error'>No Updates Available</h1>"
+                ?>
             </div>
         </div>
     </span>
