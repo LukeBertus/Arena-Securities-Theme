@@ -21,7 +21,7 @@
                 if (have_posts()) {
                     while(have_posts()) {
                         the_post();
-                        get_template_part('template-parts/archiveCard', 'updates');
+                        get_template_part('template-parts/archiveCard', 'blog');
                     }
                 } else echo "<h1 class='error'>No Media Available</h1>"
                 ?>
