@@ -20,7 +20,7 @@
                     <a class="nav-item nav-link <?php if (get_post_type() == 'files' || is_post_type_archive('files')) echo "nav-active"?>" href="<?=get_post_type_archive_link('files')?>">MEDIA</a>
                     <a class="nav-item nav-link <?php if (get_post_type() == 'blog' || is_post_type_archive('blog')) echo "nav-active"?>" href="<?=get_post_type_archive_link('blog')?>">BLOG</a>
                     <a class="nav-item nav-link <?php if (get_post_type() == 'updates' || is_post_type_archive('updates')) echo "nav-active"?>" href="<?=get_post_type_archive_link('updates')?>">UPDATES</a>
-                    <a class="nav-item nav-link" href="#info">ABOUT</a>
+                    <a class="nav-item nav-link about" href="#info">ABOUT</a>
                 </div>
             </div>
         </nav>
