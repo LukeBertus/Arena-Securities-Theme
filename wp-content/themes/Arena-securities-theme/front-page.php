@@ -88,10 +88,10 @@
                     ?>
                     <div class="contact__method">
                         <div class="icon">
-                            <img src="<?=the_post_thumbnail_url('medium')?>">
+                            <a target="_blank" href="<?=link_contact($type, $title, $linkto)?>"><img src="<?=the_post_thumbnail_url('medium')?>"></a>
                         </div>
                         <div class="text">
-                            <a href="<?=link_contact($type, $title, $linkto)?>"><?=the_title()?></a>
+                            <a target="_blank" href="<?=link_contact($type, $title, $linkto)?>"><?=the_title()?></a>
                         </div>
                     </div>
                 <?php } wp_reset_postdata();
