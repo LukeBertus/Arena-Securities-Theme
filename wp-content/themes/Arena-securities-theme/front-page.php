@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<div class="company-info section__outer" id="contact">
+<div class="company-info section__outer" id="info">
     <div class="section__inner">
         <div class="info__left" data-aos="fade-in">
             <div class="info-title">
@@ -23,7 +23,7 @@
                 <h1>OUR COMPANY</h1>
             </div>
             <p>Arena Securities is a boutique funds management firm based in Perth, Western Australia. Founded by CIO Aleck Arena, the firm operates with a focus on absolute performance, driven by a commitment to deep fundamental research and understanding of the businesses that we invest in.<br><br> Arena Securities utilises a go anywhere approach as long as the manager deems the security to be in his circle of competence. Arena Securities is a high-conviction fund and holds between 6-30 positions.</p>
-            <button>CONTACT US</button>
+            <a href="#contact">CONTACT US</a>
         </div>
         <div class="info__right">
             <img src="<?=get_theme_file_uri('images/tree.png')?>">
@@ -60,7 +60,7 @@
     </svg>
 </div>
 
-<div class="contact section__outer">
+<div class="contact section__outer" id="contact">
     <div class="contact__inner section__inner" data-aos="fade-in">
         <div class="contact__title">
             <svg width="3" height="40">
