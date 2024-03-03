@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<div class="company-info section__outer">
+<div class="company-info section__outer" id="contact">
     <div class="section__inner">
         <div class="info__left" data-aos="fade-in">
             <div class="info-title">
